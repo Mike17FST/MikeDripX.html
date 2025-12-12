@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 107, 0);
+}
+
+/* Encabezado con imagen */
+.header img {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+/* Menu horizontal */
+nav {
+    background-color: #222;
+    padding: 0;
+    margin: 0%
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;            
+    justify-content: center;  
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Contenido */
+.contenido {
+    padding: 20px;
+}
+.contenido h1 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid black;
+    background-color: antiquewhite;
+}
+
+.contenido h2 {
+    color: white;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: right;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    display: block;
+}
+
+.footer div a {
+    text-decoration: none;
+    margin: 10px;
+}  
+
+.footer div img {
+    width: 5%;
+}
+
+/* Configuración lista del pie de página*/
+.lista footer {
+    list-style: none;
+}
+ .footer div ul li {
+    text-align: left;
+    margin: 10px
+ }
+
+/* Alineacion del pie de pagina */
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.footer-izquierda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-izquierda li {
+    margin-bottom: 8px;
+}
+
+.footer-izquierda a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-derecha {
+    text-align: right;
+    margin: 3%;
+}
+
+.footer-derecha p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.redes-sociales a img {
+    width: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Para hacer el cuadro detrás de la imagen */
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* Colocación de los zapatos */
+.fila-zapatos {
+    display: flex;
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente si hay altura */
+    gap: 60px;                    /* Espacio entre los zapatos */
+    padding: 40px 20px;
+}
+
+/* Zapatos */
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;  
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.producto p {
+    color: #ff6600;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Boton de añadir al carrito */
+.producto button {
+    margin: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/*--------------------*/
+
+/* MikeDripX-Contacto */
+
+/* Formulario */
+.section1 {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.section1 img {
+    width: 20%;
+}
+
+.form { /* Borde del formulario */
+    width: 60%;
+}
+
+.form h1 {
+    margin: 6px;
+}
+
+.todo {
+    border: 2px solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    background-color: antiquewhite;
+} 
+
+.titulo {
+    border-bottom: 1px solid black;
+    margin: 5%;
+}
+
+/* Formulario comienzo */
+.comienzo {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    margin-right: 5%;
+    border-bottom: 1px solid black;
+}
+
+.comienzo h2 {
+    margin-left: 9px;
+}
+.comienzo p {
+    margin-bottom: 3%;
+    margin-left: 9px;
+}
+
+.comienzo p input {
+    width: 40%;
+}
+
+.enviar {
+    width: 100%;
+    height: 5%;
+    background-color: aqua;
+    margin-bottom: 3%;
+}
