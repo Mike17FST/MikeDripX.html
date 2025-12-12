@@ -1,176 +1,123 @@
 <!DOCTYPE html>
+<!-- Empieza lo bueno, la cabra demostrara porque es una cabra -->
 <html lang="es" dir="ltr">
-<!-- Ajustes Navegador -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Tienda de zapatos">
-    <meta name="author" content="Michael">
-    <meta name="keywords" content="Mike, zapatos, X, aiforce, drip, cabra">
-    <title>MikeDripX</title>
-    <link rel="icon" type="image/ico" href="lacabra.ico">
-    <link rel="stylesheet" type="text/css" href="css/MikeDripX.css">
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Tienda de zapatos"/>
+	<meta http-equiv="text/html"/>
+	<meta name="author" content="Michael"/>
+	<meta name="keywords" content="Mike, zapatos, X, aiforce, drip, cabra"/>
+	<title> MikeDripX </title>
+	<link rel="icon" type="image/png" href="imagenes/icon.png"/>
+	<link rel="stylesheet" type="text/css" href="MikeDripX.css">
 </head>
-
-
 <body>
+	<!--Encabezado con imagen-->
+    <header class="header">
+		<img src="imagenes/encabezado.png">
+	</header>
 
-<!-- Encabezado -->
-<div id="Header" style="background-color: pink">
-    <h1>Esto es el encabezado</h1>
-    <p>Has pillado</p>
-
-    <!-- Formulario -->
-    <form name="registro">
-    <fieldset>
-        <legend>Ayuda a Paco a conseguir su objetivo</legend>
-
-        <p>Formulario de registro</p>
-
-        <label>USUARIO:</label>
-        <input type="text" name="usuario" value="usu_1" readonly>
-        <br>
-
-        <label>CONTRASEÑA:</label>
-        <input type="password" name="contraseña">
-        <br>
-
-        <label>SOCIO:</label>
-        <input type="checkbox" name="socio" checked>
-        <br>
-
-        <label>SEXO:</label>
-        <input type="radio" name="sexo" value="m"> Masculino
-        <input type="radio" name="sexo" value="f"> Femenino
-        <input type="radio" name="sexo" value="o"> Otros
-        <br>
-
-        <label>TEMAS:</label>
-        <input type="checkbox" name="temas" value="a"> Acción
-        <input type="checkbox" name="temas" value="hi"> Historia
-        <input type="checkbox" name="temas" value="sfi"> Ciencia Ficción
-        <br>
-
-        <label>FICHERO:</label>
-        <input type="file" name="foto_perfil">
-        <input type="hidden" name="Bomboclat">
-        <br>
-
-        <label>EQUIPO:</label>
-        <select name="equipo_futbol">
-            <option></option>
-            <option>FC Barcelona</option>
-            <optgroup label="(Jugadores)">
-                <option>Pedri</option>
-                <option>Lamine Yamal</option>
-                <option>Lewandowski</option>
-            </optgroup>
-            <option>Liverpool</option>
-            <option>Real Madrid</option>
-            <option>Manchester City</option>
-        </select>
-        <br>
-
-        Comentario:
-        <textarea name="Comentario" rows="2" cols="8"></textarea>
-        <br>
-
-        <input type="submit" value="Enviar">
-        <button type="submit">Si</button>
-
-        <button type="submit">
-            <img src="imagenes/avi2.png" width="35">
-        </button>
-
-        <br><br>
-
-        <button type="reset">Resetea</button>
-        <br><br>
-
-        <input type="time">
-        <input type="date">
-
-    </fieldset>
-    </form>
-</div>
-
-<!-- Contenido -->
-<div id="Contenido" style="background-color: #A68CE3">
-
-    <h2>La mejor tienda, hecha por el GOAT</h2>
-
-    <a href="#Hollow_Night">Hollow Night 2</a>
-    <br>
-    <a href="MikeDripX_2.html#Hollow_Night_3">Ir a Hollow Night 3</a>
-    <br>
-    <a href="https://es.wikipedia.org">wiki</a>
-
-    <ol>
-        <li>Clash of Clans
-            <ul>
-                <li>Dragón</li>
-                <li>Globos</li>
-                <li>Reina Arquera</li>
-            </ul>
-        </li>
-
-        <li>Hollow Night</li>
+    <!-- Menu horizontal-->
+    <nav>
         <ul>
-            <li>Agijon <a name="Hollow_Night"></a></li>
+            <li id="inicio"><a href="#MikeDripX.html">Inicio</a></li>
+				<a name="MikeDripX.html"></a>
+            <li><a href="#">Hombres</a></li>
+            <li><a href="#">Mujeres</a></li>
+            <li><a href="#">Niños/a</a></li>
+			<li><a href="#">Ofertas</a></li>
+			<li><a href="MikeDripX-Contacto.html#contacto">Contacto</a></li>
         </ul>
-    </ol>
-<!-- Pruebas de campo en gris -->
-    <p>
-        Bueno aquí encontrarás tus <span style="color:red">zapatos</span> favoritos
-        y con ellos tendrás tanto flow como yo.
-        Página en desarrollo, tengan paciencia xD
-    </p>
+    </nav>
+	
 
-    <a target="_blank" href="https://www.google.com">
-        <span style="color:red">Empieza ahora</span>
-    </a>
-    <br><br>
+    <!-- CONTENIDO PÁGINA -->
+	 <!-- Eslogan -->
+    	<div class="contenido">
+        	<h1>Estilo que pisa fuerte</h1> <br>
+			<h2>¡Compra algunos de nuestros clasicos!</h2>
+    	</div>
+	<section class="fila-zapatos">
+		<!--Zapatos-->
+		<!-- Fila 1, Izquierda -->
+		<div class="producto">
+			<img src="imagenes/airforce blancas.png">
+			<h3>Nike Air Force 1'07</h3>
+			<p>119,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+		<!-- Fila 1, Derecha -->
+		<div class="producto">
+			<img src="imagenes/airforce negras.png">
+			<h3>Nike Air Force 1'07 Black</h3>
+			<p>119,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+	</section>
 
-    <form>
-        <label for="Nombre">¿Y la de coger una pala te la sabes?</label>
-        <input type="text" id="Nombre" placeholder="Nombre">
-        <br><br>
+	<!-- Section 2 -->
+	<section class="fila-zapatos">
+		<!-- Fila 2, Izquierda -->
+		<div class="producto">
+			<img src="imagenes/air max.png">
+			<h3>Nike Air Max</h3>
+			<p>119,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+		<!-- Fila 2, Derecha -->
+		<div class="producto">
+			<img src="imagenes/p-6000.png">
+			<h3>Nike P-6000</h3>
+			<p>189,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+	</section>
 
-        <label for="DNI">Trabaja</label>
-        <input type="text" id="DNI" placeholder="DNI">
-    </form>
-
-    <br><br>
-
-    <!-- Tabla -->
-    <table border="5">
-        <tr><td>1.1</td><td>1.2</td><td>1.3</td></tr>
-        <tr><td>2.1</td><td>2.2</td><td>2.3</td></tr>
-    </table>
-
-    <!-- Video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/T8W6hXBmnRs" 
-	title="YouTube video player" 
-	frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-	referrerpolicy="strict-origin-when-cross-origin" 
-	allowfullscreen>
-	</iframe>
-
-	<br></br>
-
-    <!-- Imagen -->
-    <img src="https://www.streetprorunning.com/images/cargador/productos/imagen-2-20650-57a33c5e-10713-NORMAL.jpg"
-         width="500">
-		 <br></br>
-    <!-- Audio -->
-    <audio src="Audios/cr7.mp3" autoplay controls> </audio>
-
-	</div>
+	<!-- Section 3 -->
+	<section class="fila-zapatos">
+		<!-- Fila 3, Izquierda -->
+		<div class="producto">
+			<img src="imagenes/jordan1.png">
+			<h3>Nike Air Jordan 1 Low</h3>
+			<p>159,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+		<!-- Fila 3, Derecha -->
+		<div class="producto">
+			<img src="imagenes/vomero.png">
+			<h3>Nike Zoom Vomero 18</h3>
+			<p>169,99€</p>
+			<button><img src="imagenes/carrito.png"></button>
+		</div>
+	</section>
 
 	<!-- Pie de página -->
-	<div id="footer" style="background-color: red; padding: 2px; margin-top:20px;">
-		<p>Esto es una prueba de pie de pagina :(</p>
-		<p>Copyright. All rights reserved</p>
-	</div>
+	<footer class="footer">
+  	<div class="footer-contenedor">
+    	<div class="footer-izquierda">
+      		<ul>
+        		<li><a href="#">¿Quiénes somos?</a></li>
+        		<li><a href="#">Preguntas frecuentes</a></li>
+        		<li><a href="#">Términos de uso</a></li>
+        		<li><a href="#">Política de Privacidad</a></li>
+        		<li><a href="#">Devoluciones y reembolsos</a></li>
+        		<li><a href="#">Cookies</a></li>
+        		<li><a href="#">Configuración de cookies</a></li>
+        		<li><a href="#">Atención al cliente</a></li>
+      		</ul>
+    	</div>
+
+    	<div class="footer-derecha">
+      		<div class="redes-sociales">
+        		<a target="_blank" href="https://www.facebook.com/"><img src="imagenes/facebook.png"></a>
+        		<a target="_blank" href="https://www.instagram.com/"><img src="imagenes/ig.png"></a>
+        		<a target="_blank" href="https://www.youtube.com/"><img src="imagenes/youtube.png"></a>
+        		<a target="_blank" href="https://x.com/"><img src="imagenes/x.png"></a>
+      		</div>
+      			<p>© 2025 MikeDripX. Todos los derechos reservados.</p>
+    	</div>
+  	</div>
+	</footer>
 
 </body>
 </html>
