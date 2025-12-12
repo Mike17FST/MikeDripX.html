@@ -7,7 +7,7 @@ body {
 /* Encabezado con imagen */
 .header img {
     width: 100%;
-    height: 60%;
+    height: 20%;
     display: block;
 }
 /* Menu horizontal */
@@ -42,11 +42,17 @@ nav ul li a:hover {
     background-color: #444;
 }
 
+.activo {
+    background-color: red;
+    font-weight: bold;
+}
+
+
 /* Contenido */
 .contenido {
     padding: 20px;
 }
-.contenido h1 {
+.h1 {
     color: #333;
     text-align: center;
     font-weight: bold;
@@ -56,9 +62,43 @@ nav ul li a:hover {
     background-color: antiquewhite;
 }
 
-.contenido h2 {
-    color: white;
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 250px;
 }
+
+.h2 { /* Cuadro 2 */
+    color: black;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 2%;
+    margin-right: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    
+}
+
+.h3 {
+    color: black;
+    margin-top: 7%;
+}
+
+.h4 {
+    margin: 5%;
+}
+
+.h5 {
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-right: 75%;
+    text-align: center;
+    background-color: aqua;
+
+}
+
 
 /* Pie de página */
 .footer {
@@ -230,6 +270,7 @@ nav ul li a:hover {
     width: 40%;
 }
 
+/* Boton de enviar */
 .enviar {
     width: 100%;
     height: 5%;
